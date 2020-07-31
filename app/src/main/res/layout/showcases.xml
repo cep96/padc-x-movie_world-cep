@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/location_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tvShowCases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_lbl_showcases"
+        style="@style/GrayText"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"/>
+
+    <TextView
+        android:id="@+id/tvMoreShowcases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/txt_lbl_more_showcases"
+        style="@style/WhiteText"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvShowCases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvShowCases"
+        android:layout_margin="@dimen/margin_medium"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        tools:listitem="@layout/item_showcase"
+        tools:itemCount="3"/>
+
+</RelativeLayout>

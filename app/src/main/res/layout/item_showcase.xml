@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="200dp"
+    android:padding="@dimen/margin_medium"
+    android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/ivShowcaseMovieImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dummy_movie_image"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/ivShowcasePlay"
+        android:layout_width="@dimen/margin_xxlarge"
+        android:layout_height="@dimen/margin_xxlarge"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icons8_play_24"
+        android:padding="@dimen/margin_medium"
+        android:background="@drawable/circle_play_button"/>
+
+    <TextView
+        android:id="@+id/tvShowcaseMovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ashes of Love 2018."
+        android:textColor="#B4090909"
+        android:textSize="@dimen/text_regular_3x"
+        android:layout_above="@id/tvShowcaseDate"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/tvShowcaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 December 2020"
+        android:textColor="#B4090909"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:textSize="@dimen/text_regular"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

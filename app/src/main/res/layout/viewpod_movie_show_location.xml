@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/margin_small"
+    android:layout_margin="@dimen/margin_medium_2"
+    android:backgroundTint="@color/location_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCheckMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_heading_1x"
+            android:text="@string/txt_lbl_check_movie_showtimes"
+            android:paddingStart="@dimen/margin_medium_2"
+            android:paddingTop="@dimen/margin_medium_2"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tvSeeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCheckMovie"
+            android:padding="@dimen/margin_medium_2"
+            android:text="@string/txt_lbl_see_more"
+            android:textColor="@color/accent"
+
+            />
+
+        <ImageView
+            android:id="@+id/ivShowTimeLocation"
+            android:layout_width="@dimen/margin_xxlarge"
+            android:layout_height="@dimen/margin_xxlarge"
+            android:src="@drawable/icons8_place_marker_48"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

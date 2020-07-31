@@ -9,4 +9,19 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="txt_lbl_discover">Discover</string>
+    <string name="txt_lbl_official_review">Official Review</string>
+    <string name="txt_lbl_popular_films_and_serials">BEST POPULAR FILMS AND SERIALS</string>
+    <string name="txt_lbl_check_movie_showtimes">Check Movie\nShowtimes</string>
+
+    <string name="txt_lbl_see_more"><u>SEE MORE</u></string>
+    <string name="txt_lbl_more_showcases"><u>MORE SHOWCASES</u></string>
+    <string name="txt_lbl_more_best_actors"><u>MORE ACTORS</u></string>
+    <string name="txt_lbl_more_creator"><u>MORE CREATORS</u></string>
+
+    <string name="txt_lbl_showcases">Show Case</string>
+    <string name="txt_lbl_best_actors">Best Actors</string>
+    <string name="txt_lbl_actors">Actors</string>
+    <string name="txt_lbl_creator">Creators</string>
+    <string name="menu_search">Search</string>
 </resources>

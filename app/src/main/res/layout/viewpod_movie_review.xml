@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:id="@+id/ivMovieImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dummy_movie_image"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/ivPlay"
+        android:layout_width="@dimen/margin_xxlarge"
+        android:layout_height="@dimen/margin_xxlarge"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icons8_play_24"
+        android:padding="@dimen/margin_medium"
+        android:background="@drawable/circle_play_button"/>
+
+    <TextView
+        android:id="@+id/tvMovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ashes of Love 2018."
+        android:textColor="#B4090909"
+        android:textSize="@dimen/text_heading_1x"
+        android:layout_above="@id/tvOfficialReview"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/tvOfficialReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_lbl_official_review"
+        android:textColor="#B4090909"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:textSize="@dimen/text_regular_3x"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>
