@@ -2,11 +2,9 @@ package com.cep.moviesworld.mvp.views
 
 interface MainView : BaseView{
 
-    fun getPopularFilmsAndSerials()
-    fun getCategories()
-    fun getMoviesByCategory()
-    fun getShowcases()
-    fun getBestActors()
+    fun displayPopularFilmsAndSerials(popularFilmsAndSerials: List<String>)
+    fun displayShowcases(showcases: List<String>)
+    fun displayBestActors(actors: List<String>)
 
-    fun navigateToMovieDetails()
+    fun navigateToMovieDetails(movieId: Int)
 }

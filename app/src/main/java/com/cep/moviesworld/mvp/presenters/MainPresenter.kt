@@ -5,5 +5,7 @@ import com.cep.moviesworld.mvp.views.MainView
 
 interface MainPresenter: BasePresenter<MainView> {
 
-    fun onUIReady(lifecycleOwner: LifecycleOwner)
+    fun onUIReadyForPopularFilmsAndSerials(lifecycleOwner: LifecycleOwner)
+    fun onUIReadyForShowcases(lifecycleOwner: LifecycleOwner)
+    fun onUIReadyForActors(lifecycleOwner: LifecycleOwner)
 }

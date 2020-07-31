@@ -41,16 +41,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_medium_2"
                 android:layout_marginEnd="@dimen/margin_medium_2"
+                app:tabMode="scrollable"
+                app:tabTextColor="@color/secondary_text"
+                app:tabSelectedTextColor="@android:color/white"
+                android:background="@android:color/transparent"
                 />
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/viewPager2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <include layout="@layout/showcases" />
 
-            <include layout="@layout/actors"/>
+            <include layout="@layout/actor"/>
 
         </LinearLayout>
 

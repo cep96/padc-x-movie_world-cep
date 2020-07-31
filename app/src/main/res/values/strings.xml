@@ -24,4 +24,6 @@
     <string name="txt_lbl_actors">Actors</string>
     <string name="txt_lbl_creator">Creators</string>
     <string name="menu_search">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
