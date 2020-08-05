@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.cep.moviesworld.R
 import com.cep.moviesworld.activities.MovieDetailsActivity
 import com.cep.moviesworld.adapters.MoviesByCategoryRecyclerAdapter
+import com.cep.moviesworld.data.vos.ResultsVO
 import com.cep.moviesworld.mvp.presenters.MoviesByCategoryPresenter
 import com.cep.moviesworld.mvp.presenters.MoviesByCategoryPresenterImpl
 import com.cep.moviesworld.mvp.views.MovieByCategoryView
@@ -39,7 +40,7 @@ class MovieCategoryFragment : Fragment(), MovieByCategoryView {
 
         setUpRecyclerView()
 
-        mPresenter.onUIReadyMovies(this)
+//        mPresenter.onUIReadyMovies(this)
     }
 
     private fun setUpPresenter() {
@@ -47,14 +48,14 @@ class MovieCategoryFragment : Fragment(), MovieByCategoryView {
     }
 
     private fun setUpRecyclerView() {
-        mMoviesByCategoryAdapter = MoviesByCategoryRecyclerAdapter()
+//        mMoviesByCategoryAdapter = MoviesByCategoryRecyclerAdapter()
 
         val layoutManager = LinearLayoutManager(this.requireContext(), LinearLayoutManager.HORIZONTAL, false)
         rvMoviesByCategory.layoutManager = layoutManager
         rvMoviesByCategory.adapter = mMoviesByCategoryAdapter
     }
 
-    override fun displayMoviesByCategory(movies: List<String>) {
+    override fun displayMoviesByGenre(movies: List<ResultsVO>) {
         mMoviesByCategoryAdapter.setNewData(movies.toMutableList())
     }
 

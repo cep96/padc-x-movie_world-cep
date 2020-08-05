@@ -24,6 +24,16 @@
     <string name="txt_lbl_actors">Actors</string>
     <string name="txt_lbl_creator">Creators</string>
     <string name="menu_search">Search</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_lbl_play_trailer">Play Trailer</string>
+    <string name="btn_lbl_rate_movie">Rate Movie</string>
+    <string name="txt_lbl_storyline">StoryLine</string>
+    <string name="txt_lbl_about_film">About Film</string>
+    <string name="txt_lbl_original_title">Original title:</string>
+    <string name="txt_lbl_type">Type:</string>
+    <string name="txt_lbl_production">Production:</string>
+    <string name="txt_lbl_premiere">Premiere:</string>
+    <string name="txt_lbl_description">Description</string>
 </resources>

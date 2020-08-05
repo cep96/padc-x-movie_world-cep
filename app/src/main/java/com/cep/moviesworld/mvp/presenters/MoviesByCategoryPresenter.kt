@@ -5,5 +5,5 @@ import com.cep.moviesworld.mvp.views.MovieByCategoryView
 
 interface MoviesByCategoryPresenter: BasePresenter<MovieByCategoryView> {
 
-    fun onUIReadyMovies(lifecycleOwner: LifecycleOwner)
+    fun onUIReadyMovies(lifecycleOwner: LifecycleOwner, genreId: Int)
 }

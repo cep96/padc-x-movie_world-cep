@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
     tools:context=".activities.MovieDetailsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/viewpodImg"
+            layout="@layout/viewpod_movie_info" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="@dimen/margin_large"
+            android:layout_height="@dimen/margin_large"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:src="@drawable/ic_baseline_search_24"
+            android:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="@dimen/margin_xlarge"
+            android:layout_height="@dimen/margin_xlarge"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:background="@drawable/circle_back_button"
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:tint="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewpodImg"
+            android:orientation="vertical">
+
+            <include layout="@layout/viewpod_time_favorite_and_type" />
+
+            <TextView
+                android:id="@+id/tvStoryLineTxt"
+                style="@style/GrayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_medium_2"
+                android:text="@string/txt_lbl_storyline"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tvStoryLineDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium_2"
+                style="@style/WhiteText" />
+
+            <include layout="@layout/viewpod_play_trailer_and_rate_movie" />
+
+            <include layout="@layout/viewpod_actors" />
+
+            <include layout="@layout/viewpod_about_film"/>
+
+            <include layout="@layout/viewpod_creators"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

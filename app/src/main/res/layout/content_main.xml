@@ -11,46 +11,49 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <include layout="@layout/viewpod_movie_review"/>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
 
-            <TextView
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dots_indicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/txt_lbl_popular_films_and_serials"
-                android:paddingStart="@dimen/margin_medium_2"
-                android:layout_marginTop="@dimen/margin_medium_2"
-                android:textSize="@dimen/text_regular_2x"
-                android:textStyle="bold"
-                android:textColor="@color/secondary_text"/>
+                app:dotsColor="@android:color/white"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="@dimen/margin_medium"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="2.5"
+                app:selectedDotColor="@color/accent"
+                app:progressMode="true"
+                android:layout_gravity="center_horizontal"
+                />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvPopularFilmsAndSerials"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_medium"
-                tools:listitem="@layout/item_popular_films_and_serials"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                android:orientation="horizontal"
-                tools:itemCount="5"/>
+<!--            <include layout="@layout/viewpod_movie_review"/>-->
+
+            <include layout="@layout/viewpod_popular_films_and_serials"/>
 
             <include layout="@layout/viewpod_movie_show_location"/>
 
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tabLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_medium_2"
-                android:layout_marginEnd="@dimen/margin_medium_2"
-                app:tabMode="scrollable"
-                app:tabTextColor="@color/secondary_text"
-                app:tabSelectedTextColor="@android:color/white"
-                android:background="@android:color/transparent"
-                />
+            <include layout="@layout/viewpod_movies_by_genre"/>
 
-            <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/viewPager2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+<!--            <com.google.android.material.tabs.TabLayout-->
+<!--                android:id="@+id/tabLayout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/margin_medium_2"-->
+<!--                android:layout_marginEnd="@dimen/margin_medium_2"-->
+<!--                app:tabMode="scrollable"-->
+<!--                app:tabTextColor="@color/secondary_text"-->
+<!--                app:tabSelectedTextColor="@android:color/white"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                />-->
+
+<!--            <androidx.viewpager2.widget.ViewPager2-->
+<!--                android:id="@+id/viewPager2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
 
             <include layout="@layout/showcases" />
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<com.cep.moviesworld.views.viewpods.ViewPodUpcomingMovie
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:id="@+id/viewpodUpcoming"
     android:layout_height="250dp">
 
     <ImageView
@@ -25,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ashes of Love 2018."
-        android:textColor="#B4090909"
+        android:textColor="@android:color/white"
         android:textSize="@dimen/text_heading_1x"
         android:layout_above="@id/tvOfficialReview"
         android:layout_marginStart="@dimen/margin_medium_2"
@@ -38,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txt_lbl_official_review"
-        android:textColor="#B4090909"
+        android:textColor="@android:color/white"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="@dimen/margin_medium_2"
         android:layout_marginBottom="@dimen/margin_medium_2"
@@ -47,4 +48,4 @@
         />
 
 
-</RelativeLayout>
+</com.cep.moviesworld.views.viewpods.ViewPodUpcomingMovie>

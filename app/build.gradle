@@ -45,6 +45,24 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    //GSON
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.1'
+
+    //RxKotlin
+    implementation "io.reactivex.rxjava2:rxkotlin:2.4.0"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    //OKHttp
+    implementation "com.squareup.okhttp3:okhttp:4.1.0"
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
     def room_version = "2.2.3"
     def lifecycle_version = "2.2.0"
 
@@ -61,5 +79,26 @@ dependencies {
     // Room
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
+
+    // indicator
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+
+    // Local Unit Tests
+    testImplementation 'junit:junit:4.12'
+    testImplementation "androidx.test.ext:junit-ktx:1.1.1"
+    testImplementation "androidx.test:core-ktx:1.2.0"
+    testImplementation "org.robolectric:robolectric:4.3.1"
+    testImplementation "io.mockk:mockk:1.10.0"
+    testImplementation "org.mockito:mockito-core:3.1.0"
+
+    // Tests that require Android Device
+    androidTestImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test:rules:1.2.0'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation "androidx.test:core-ktx:1.2.0"
+    androidTestImplementation "androidx.test.ext:junit-ktx:1.1.1"
+    androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:3.2.0'
+    androidTestImplementation "org.mockito:mockito-android:3.1.0"
 
 }

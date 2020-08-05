@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cep.moviesworld.views.viewpods.PopularFilmsAndSerialsViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_lbl_popular_films_and_serials"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold"
+        android:textColor="@color/secondary_text"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPopularFilmsAndSerials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        tools:listitem="@layout/item_popular_films_and_serials"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        tools:itemCount="5"/>
+
+</com.cep.moviesworld.views.viewpods.PopularFilmsAndSerialsViewPod>

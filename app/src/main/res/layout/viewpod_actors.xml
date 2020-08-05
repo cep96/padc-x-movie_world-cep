@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cep.moviesworld.views.viewpods.ActorViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_medium_2"
+    android:background="@color/location_background">
+
+    <TextView
+        android:id="@+id/tvActorsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/GrayText"
+        android:text="@string/txt_lbl_actors"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginStart="@dimen/margin_medium_2"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvActors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_person"
+        android:layout_margin="@dimen/margin_medium"/>
+
+</com.cep.moviesworld.views.viewpods.ActorViewPod>

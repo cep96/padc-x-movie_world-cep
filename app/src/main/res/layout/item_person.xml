@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="160dp"
-    android:layout_height="220dp"
+    android:layout_width="140dp"
+    android:layout_height="200dp"
     android:layout_margin="@dimen/margin_medium">
 
     <ImageView
+        android:id="@+id/ivProfile"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/deng_lun"
@@ -17,13 +18,44 @@
         android:background="#0F000000">
 
         <ImageView
-            android:layout_width="@dimen/margin_xlarge"
-            android:layout_height="@dimen/margin_xlarge"
+            android:layout_width="@dimen/margin_large"
+            android:layout_height="@dimen/margin_large"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="@dimen/margin_medium"
             android:layout_marginEnd="@dimen/margin_medium"
             android:src="@drawable/ic_baseline_favorite_border_24"
             android:tint="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/ivThumbUp"
+            android:layout_width="@dimen/margin_large"
+            android:layout_height="@dimen/margin_large"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:src="@drawable/icons8_thumbs_up_48"/>
+
+        <TextView
+            android:id="@+id/tvLiked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You like 12 Movies"
+            android:textSize="@dimen/text_smaller"
+            android:layout_toEndOf="@id/ivThumbUp"
+            android:layout_alignTop="@id/ivThumbUp"
+            android:textColor="@color/secondary_text"
+            android:paddingTop="@dimen/margin_medium"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvActorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/WhiteText"
+            android:layout_above="@id/ivThumbUp"
+            android:paddingStart="@dimen/margin_medium"
+            android:text="Deng Lun"/>
 
 
     </RelativeLayout>

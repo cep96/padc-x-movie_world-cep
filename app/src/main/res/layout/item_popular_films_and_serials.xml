@@ -19,6 +19,8 @@
         android:layout_below="@id/viewPodMovie"
         android:layout_marginTop="@dimen/margin_medium"
         android:text="Aladdin"
+        android:maxLines="1"
+        android:ellipsize="end"
         style="@style/WhiteText"
         />
 

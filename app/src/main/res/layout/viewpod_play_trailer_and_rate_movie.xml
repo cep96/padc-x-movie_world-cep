@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cep.moviesworld.views.viewpods.PlayTrailerAndRateMovieViewPod
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button_with_accent"
+        android:drawableLeft="@drawable/ic_baseline_play_circle_filled_24"
+        android:drawableTint="@color/secondary_text"
+        android:drawablePadding="@dimen/margin_small"
+        android:paddingStart="@dimen/margin_medium"
+        android:text="@string/btn_lbl_play_trailer"
+        android:paddingEnd="@dimen/margin_medium_2"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginStart="@dimen/margin_medium_2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button_only_stroke"
+        android:drawableLeft="@drawable/ic_baseline_star_24"
+        android:drawableTint="@color/accent"
+        android:drawablePadding="@dimen/margin_medium"
+        android:paddingStart="@dimen/margin_medium"
+        android:text="@string/btn_lbl_rate_movie"
+        android:paddingEnd="@dimen/margin_medium_2"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginStart="@dimen/margin_medium_2"/>
+
+</com.cep.moviesworld.views.viewpods.PlayTrailerAndRateMovieViewPod>
