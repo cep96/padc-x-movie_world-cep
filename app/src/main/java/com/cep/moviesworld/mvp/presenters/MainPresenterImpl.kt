@@ -12,6 +12,7 @@ import com.cep.moviesworld.network.responses.GetMovieCastAndCrewResponse
 import com.cep.moviesworld.network.responses.GetMovieTrailerResponse
 import com.cep.moviesworld.network.responses.GetMovieUpcomingResponse
 import com.cep.moviesworld.network.responses.PopularFilmsAndSerialsResponse
+import com.cep.shared.AbstractBasePresenter
 import io.reactivex.android.schedulers.AndroidSchedulers
 
 class MainPresenterImpl: MainPresenter, AbstractBasePresenter<MainView>() {

@@ -8,6 +8,7 @@ import com.cep.moviesworld.data.models.MovieModelImpl
 import com.cep.moviesworld.mvp.views.MovieDetailsView
 import com.cep.moviesworld.network.responses.GetMovieCastAndCrewResponse
 import com.cep.moviesworld.network.responses.GetMovieDetailsResponse
+import com.cep.shared.AbstractBasePresenter
 import io.reactivex.android.schedulers.AndroidSchedulers
 
 class MovieDetailsPresenterImpl: MovieDetailsPresenter, AbstractBasePresenter<MovieDetailsView>() {

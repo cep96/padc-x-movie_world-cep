@@ -15,7 +15,7 @@ class CastViewHolder(itemView: View) : BaseViewHolder<CastVO>(itemView) {
                 .load("$GET_MOVIE_IMAGE${data.profilePath}")
                 .into(itemView.ivProfile)
         }
-        
+
         itemView.tvActorName.text = data.name
     }
 }

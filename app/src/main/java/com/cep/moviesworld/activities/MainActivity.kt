@@ -18,6 +18,7 @@ import com.cep.moviesworld.mvp.presenters.MainPresenterImpl
 import com.cep.moviesworld.mvp.views.MainView
 import com.cep.moviesworld.network.responses.GetMovieTrailerResponse
 import com.cep.moviesworld.views.viewpods.ViewPodUpcomingMovie
+import com.cep.shared.BaseActivity
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.actor.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -25,7 +26,7 @@ import kotlinx.android.synthetic.main.showcases.*
 import kotlinx.android.synthetic.main.viewpod_movies_by_genre.*
 import kotlinx.android.synthetic.main.viewpod_popular_films_and_serials.*
 
-class MainActivity : AppCompatActivity(), MainView{
+class MainActivity : BaseActivity(), MainView{
 
     private lateinit var mPresenter: MainPresenter
 

@@ -4,6 +4,7 @@ import com.cep.moviesworld.data.vos.CastVO
 import com.cep.moviesworld.data.vos.CrewVO
 import com.cep.moviesworld.data.vos.PersonVO
 import com.cep.moviesworld.network.responses.GetMovieDetailsResponse
+import com.cep.shared.BaseView
 
 interface MovieDetailsView: BaseView {
 

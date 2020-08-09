@@ -4,6 +4,7 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
 import com.cep.moviesworld.data.models.MovieModelImpl
 import com.cep.moviesworld.mvp.views.MovieByCategoryView
+import com.cep.shared.AbstractBasePresenter
 
 class MoviesByCategoryPresenterImpl: MoviesByCategoryPresenter,
     AbstractBasePresenter<MovieByCategoryView>() {

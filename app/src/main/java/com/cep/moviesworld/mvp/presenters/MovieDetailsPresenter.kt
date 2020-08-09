@@ -2,6 +2,7 @@ package com.cep.moviesworld.mvp.presenters
 
 import androidx.lifecycle.LifecycleOwner
 import com.cep.moviesworld.mvp.views.MovieDetailsView
+import com.cep.shared.BasePresenter
 
 interface MovieDetailsPresenter: BasePresenter<MovieDetailsView> {
 

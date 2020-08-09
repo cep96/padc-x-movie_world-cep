@@ -5,6 +5,7 @@ import com.cep.moviesworld.delegates.MovieItemDelegate
 import com.cep.moviesworld.mvp.views.MainView
 import com.cep.moviesworld.views.viewpods.PopularFilmsAndSerialsViewPod
 import com.cep.moviesworld.views.viewpods.ViewPodUpcomingMovie
+import com.cep.shared.BasePresenter
 import java.util.*
 
 interface MainPresenter: BasePresenter<MainView>, PopularFilmsAndSerialsViewPod.Delegate,
